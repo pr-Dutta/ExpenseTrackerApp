@@ -5,11 +5,11 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Expense(
-    val title: String,
-    val amount: Float,
-    val category: String,
-    val dateAdded: Long,
-
-    @PrimaryKey(autoGenerate = true)
-    val id: Int = 0
+//    val title: String,
+//    val amount: Float,
+//    val category: String,
+//    val dateAdded: Long,
+//
+//    @PrimaryKey(autoGenerate = true)
+//    val id: Int = 0
 )
