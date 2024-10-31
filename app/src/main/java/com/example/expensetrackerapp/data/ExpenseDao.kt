@@ -16,7 +16,7 @@ interface ExpenseDao {
     suspend fun deleteExpense(expense: Expense)
 
     @Query("SELECT * FROM expense ORDER BY dateAdded")
-    fun setExpenseOrderByDateAdded() : Flow<List<Expense>>
+    fun getExpenseOrderByDateAdded() : Flow<List<Expense>>
 
     // Flow will update the UI whenever the database changer
     // it is asynchronous in nature
